@@ -1,0 +1,75 @@
+/* COMMON */
+body{
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.inner{
+  width: 1100px;
+  height: 100px;
+  background-color: orange;
+  margin: 0 auto;
+  position: relative;
+}
+a{
+  text-decoration: none;
+}
+/* HEADER */
+header{
+  border-bottom: 1px solid #333;
+}
+header .inner{ 
+
+}
+header .inner img{
+  display: block;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  position: absolute;
+}
+header .inner .main-menu{
+  display: flex;
+  position: absolute;
+  right: 70px;
+  top: 25px;
+}
+header .inner .main-menu .menu{
+  margin: 10px;
+}
+header .inner .main-menu .menu a{
+  font-size: 18px;
+  color: #969696;
+}
+header .inner .main-menu .menu a:hover{
+  color: #333;
+}
+
+/* INTRODUCE */
+.introduce{
+  height: 900px;
+  border-bottom: 1px solid #333;
+
+}
+/* ESTIMATE */
+.estimate{
+  height: 900px;
+  border-bottom: 1px solid #333;
+}
+/* PORTPOLIO */
+.portpolio{
+  height: 900px;
+  border-bottom: 1px solid #333;
+}
+/* SERVICE */
+.service{
+  height: 900px;
+  border-bottom: 1px solid #333;
+}
+/* REVIEW */
+.review{
+  height: 900px;
+  border-bottom: 1px solid #333;
+}

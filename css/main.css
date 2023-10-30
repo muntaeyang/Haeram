@@ -1,75 +1,139 @@
 /* COMMON */
-body{
-  color: #333;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.4;
-  font-family: 'Nanum Gothic', sans-serif;
-}
 .inner{
-  width: 1100px;
-  height: 100px;
-  background-color: orange;
-  margin: 0 auto;
   position: relative;
+  width:  1100px;
+  margin: 0 auto;
+  height: 100%;
+}
+section{
+  border-bottom: 1px solid #333;
 }
 a{
   text-decoration: none;
+  color: #333;
+}
+.btn{
+  width: 130px;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: block;
+  transition: .4s;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  bottom: 30px;
 }
 /* HEADER */
 header{
-  border-bottom: 1px solid #333;
-}
-header .inner{ 
-
-}
-header .inner img{
-  display: block;
-  width: 90px;
-  height: 90px;
-  object-fit: cover;
+  position: relative;
+  height: 110px;
+  z-index: 1;
+} 
+header .inner{
+  height: 110px;
+  background-color: orange;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+} 
+header .logo{
+  height: 33.08px;
   position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
 }
-header .inner .main-menu{
-  display: flex;
+header .logo img{
+  width: 200px;
+  object-fit: contain;
+}
+header .main-menu{
   position: absolute;
-  right: 70px;
-  top: 25px;
+  height: 30px;
+  right: 50px;
+  bottom: 0;
+  top: 0;
+  margin: auto;
 }
-header .inner .main-menu .menu{
-  margin: 10px;
-}
-header .inner .main-menu .menu a{
-  font-size: 18px;
-  color: #969696;
-}
-header .inner .main-menu .menu a:hover{
+header .main-menu .active {
   color: #333;
+  font-weight: 600;
 }
+
+header .main-menu button{
+  background: none;
+  margin-right: 10px;
+  height: 30px;
+  border: none;
+}
+header .main-menu button p{
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: #4d4b4b;
+  font-weight: 400;
+  cursor: pointer;
+}
+header .main-menu button p:hover{
+  color: #333;
+  font-weight: 600;
+}
+
 
 /* INTRODUCE */
 .introduce{
+  position: relative;
   height: 900px;
-  border-bottom: 1px solid #333;
-
+  margin: 0 auto;
+  background: pink
 }
 /* ESTIMATE */
 .estimate{
   height: 900px;
-  border-bottom: 1px solid #333;
+  margin: 0 auto;
+  background: red;
 }
+
 /* PORTPOLIO */
 .portpolio{
   height: 900px;
-  border-bottom: 1px solid #333;
+  margin: 0 auto;
+  background: blue;
 }
+
 /* SERVICE */
 .service{
   height: 900px;
-  border-bottom: 1px solid #333;
+  margin: 0 auto;
+  background: green;
 }
+
 /* REVIEW */
 .review{
   height: 900px;
-  border-bottom: 1px solid #333;
+  margin: 0 auto;
+  background: yellow;
+}
+
+/* FOOTER */
+footer{
+  height: 400px;
+}
+footer .flogo{
+
+}
+footer .info{
+
+}
+footer .info span{
+  display: block;
+  margin: 10px 0 ;
+  font-size: 25px;
 }

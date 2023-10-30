@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="./css/main.css">
   <script defer src="./js/main.js"></script>
   
+  <!-- 스크롤 이벤트 -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
   
   <title>HAERAM</title>
 
@@ -17,58 +19,79 @@
   <!-- header -->
   <header>
     <div class="inner">
-      <a href="/">
-        <img src="./images/main_logo.png" alt="">
-      </a>
-      <div class="main-menu">
-        <div class="menu">
-          <a href="javascript:void(0)">회사소개</a>
+        <div class="logo">
+          <a href="/">
+            <img src="./images/text_logo.png" alt="HAERAM">
+          </a>
         </div>
-        <div class="menu">
-          <a href="javascript:void(0)">견적문의</a>
-        </div>
-        <div class="menu">
-          <a href="javascript:void(0)">포트폴리오</a>
-        </div>
-        <div class="menu">
-          <a href="javascript:void(0)">서비스</a>
-        </div>
-        <div class="menu">
-          <a href="javascript:void(0)">리뷰</a>
-        </div>
-      </div>
-    </div>
+
+
+        <div class="main-menu">  
+          <button onclick="fnMove('1')" class="active">
+            <p>회사소개</p>
+          </button>
+          <button onclick="fnMove('2')">
+            <p>견적문의</p>
+          </button>
+          <button onclick="fnMove('3')">
+            <p>포트폴리오</p>
+          </button>
+          <button onclick="fnMove('4')">
+            <p>서비스</p>
+          </button>
+          <button onclick="fnMove('5')">
+            <p>리뷰</p>
+          </button>
+       </div>
+    </div> 
   </header>
 
-  <!-- introduce -->
-  <section class="introduce">
-
+  <!-- INTRODUCE -->
+  <section class="introduce" id="page1">
+    <div class="inner">
+      <a href="./html/intro.html" class="btn">더 보기</a>
+    </div>
   </section>
 
-  <!-- estimate -->
-  <section class="estimate">
-    
+  <!-- ESTIMATE -->
+  <section class="estimate" id="page2">
+    <div class="inner">
+      <a href="./html/esti.html" class="btn">더 보기</a>
+    </div>
   </section>
 
-    <!-- portpolio -->
-    <section class="portpolio">
-    
+  <!-- PORTPOLIO -->
+  <section class="portpolio" id="page3">
+    <div class="inner">
+      <a href="./html/port.html" class="btn">더 보기</a>
+    </div>
   </section>
 
-  <!-- service -->
-  <section class="service">
-
+  <!-- SERVICE -->
+  <section class="service" id="page4">
+    <div class="inner">
+      <a href="./html/serv.html" class="btn">더 보기</a>
+    </div>
   </section>
 
-  <!-- review -->
-  <section class="review">
-
+  <!-- REVIEW -->
+  <section class="review" id="page5">
+    <div class="inner">
+      <a href="./html/revi.html" class="btn">더 보기</a>
+    </div>
   </section>
 
-  <!-- footer -->
+  <!-- FOOTER -->
   <footer>
-    
+    <div class="inner">
+        <!-- <div class="flogo">
+          <img src="./images/main_logo.png" alt="">
+        </div> -->
+      <div class="info">
+        <span>사업자등록번호 000-00-00000</span>
+        <span>해람 대표 문태양</span>
+        <span>Tel : 010-3015-1100 / Fax 000-0000-0000</span>
+        <span>E-Mail : haeram1005@gmail.com</span>
+      </div>
+    </div>
   </footer>
-
-</body>
-</html>

@@ -92,86 +92,43 @@ header .main-menu button p{
 header .main-menu button p:hover{
   font-weight: 600;
 }
-/* INTRODUCE */
-.introduce{
+
+
+.form{
   margin-top: 120px;
-  position: relative;
-  height: 900px;
-  background-image: url("../images/introbackground.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  float: right;
+  width: 100%;
 }
-.introduce .text{
-  position: relative;
-}
-.introduce .text img{
-  position: absolute;
-  top: 250px;
-  right: 0;
-  left: 0;
-  margin: 0 auto;
-}
-
-/* ESTIMATE */
-.estimate{
-  height: 900px;
-  margin: 0 auto;
-}
-.estimate img{
-  position: absolute;
-  top: 150px;
-  right: 0;
-  left: 0;
-  margin: 0 auto;
-  border: 1px solid #070d59;
-}
-.estimate .btn{
-  border: 2px solid #070d59;
-  color: #070d59;
-  bottom: 300px;
-}
-
-/* PORTPOLIO */
-.portpolio{
-  height: 900px;
-  margin: 0 auto;
-}
-.portpolio .portpolio__items{
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 10px;
-}
-.portpolio .portpolio__items .item{
-  margin: 10px 10px;
-}
-
-
-/* SERVICE */
-.service{
-  height: 900px;
-  margin: 0 auto;
-  background: green;
-}
-
-/* REVIEW */
-.review{
-  height: 900px;
-  margin: 0 auto;
-  background: yellow;
-}
-
-/* FOOTER */
-footer{
-  height: 400px;
-}
-footer .flogo{
+.form .type{
 
 }
-footer .info{
-
-}
-footer .info span{
+.form .type .title{
+  overflow: hidden;
+  padding-top: 70px;
   display: block;
-  margin: 10px 0 ;
-  font-size: 25px;
+}
+.form .type .title .big-title{
+  font-weight: bold;
+  font-size: 27px;
+  letter-spacing: -0.3px;
+  font-family: 'Noto Sans', sans-serif;
+  display: inline-block;
+  float: left;
+  padding-right: 10px;
+}
+.form .type .title .small-title{
+  line-height: 18px;
+  margin-top: -9px;
+  padding-top: 2.5px;
+}
+.form .type .title .small-title .span_br{
+  display: block;
+}
+
+.form .check{
+  box-sizing: border-box;
+}
+.form .check .input-group2{
+  font-size: 11px;
+  
 }

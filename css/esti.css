@@ -39,6 +39,12 @@ a{
   color: #070d59;
   border: 2px solid #070d59;
 }
+input[type=checkbox],input[type=radio] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0
+}
 /* HEADER */
 header{
   position: fixed;
@@ -93,21 +99,8 @@ header .main-menu button p:hover{
   font-weight: 600;
 }
 
-
-.form{
-  margin-top: 120px;
-  float: right;
-  width: 100%;
-}
-.form .type{
-
-}
-.form .type .title{
-  overflow: hidden;
-  padding-top: 70px;
-  display: block;
-}
-.form .type .title .big-title{
+/* form common */
+.big-title{
   font-weight: bold;
   font-size: 27px;
   letter-spacing: -0.3px;
@@ -116,10 +109,49 @@ header .main-menu button p:hover{
   float: left;
   padding-right: 10px;
 }
-.form .type .title .small-title{
+.small-title{
   line-height: 18px;
-  margin-top: -9px;
+  /* margin-top: -9px; */
   padding-top: 2.5px;
+}
+.form .title{
+  overflow: hidden;
+  padding-top: 30px;
+  display: block;
+}
+input{
+  font-family: inherit;
+  font-size: inherit;
+}
+input[type="radio"], input[type="checkbox"]{
+  margin: 4px 0 0;
+  box-sizing: border-box;
+}
+/* form */
+.form{
+  margin-top: 110px;
+  float: right;
+  width: 100%;
+}
+.form .inner{
+  border-left: 1px solid #070d59;
+  border-right: 1px solid #070d59;
+  padding: 0 20px;
+  width: 900px;
+}
+.form .type{
+
+}
+.form .type .title{
+  overflow: hidden;
+  padding-top: 30px;
+  display: block;
+}
+.form .type .title .big-title{
+  bottom: 30px;
+}
+.form .type .title .small-title{
+
 }
 .form .type .title .small-title .span_br{
   display: block;
@@ -130,5 +162,146 @@ header .main-menu button p:hover{
 }
 .form .check .input-group2{
   font-size: 11px;
+  margin: 12px 0 ;
+}
+.form .check .input-group2 input{
+  display: none;
+}
+.form .check label{
+  display: inline-block;
+  width: 150px;
+  line-height: 128px;
+  text-align: center;
+  border: 1px solid #bfbfbf;
+  border-spacing: 0;
+  box-sizing: border-box;
+}
+.form .check .input-group2 input[type="checkbox"] + label{
+  cursor: pointer;
+  height: 128px;
+}
+.form .check .input-group2 input[type="checkbox"] + label.label1,
+.form .check .input-group2 input[type="checkbox"] + label.label2,
+.form .check .input-group2 input[type="checkbox"] + label.label3,
+.form .check .input-group2 input[type="checkbox"] + label.label4{
+  background-image: url("../images/contact2_off.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.form .info{
+
+}
+.form .new_info{
+
+}
+.form .new_info .title{
+
+}
+.form .new_info .title .big-title{
+  font-weight: bold;
+  font-size: 27px;
+  letter-spacing: -0.3px;
+  font-family: 'Noto Sans', sans-serif;
+  display: inline-block;
+  float: left;
+  padding-right: 10px;
+  margin-top: 6px ;
+}
+.form .new_info .title .small-title{
+
+}
+.form .new_info label{
+  display: inline-block;
+  width: 300px;
+  line-height: 128px;
+  text-align: center;
+  border: 1px solid #bfbfbf;
+  border-spacing: 0;
+  box-sizing: border-box;
+}
+.form .new_info .radio{
+  margin: 20px 0 10px;
+}
+.form .new_info .radio .input-group2{
+
+}
+.form .new_info .radio .input-group2 input{
+  display: none;
+}
+.form .new_info .radio .input-group2 input[type="radio"] + label{
+  height: 50px;
+}
+.form .new_info .radio .input-group2 input[type="radio"] + label.label7{
+  background-image: url("../images/consult_01_off.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.form .new_info .radio .input-group2 input[type="radio"] + label.label8{
+  background-image: url("../images/consult_02_off.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.form .info_fix{
+
+}
+.form .info_fix .title{
+  margin-bottom: 20px;
+}
+.form .info_fix .title .big-title{
+  margin-top: 7px;
+}
+.form .info_fix .title .small-title{
+
+}
+.form .info_fix .input{
+  width: 400px;
+  vertical-align: middle;
+}
+.form .info_fix .input input{
+  margin: 5px 0 ;
+  height: 25px;
+  width: 600px;
+}
+.form .budget{
+
+}
+.form .budget .title{
+  margin-bottom: 20px;
+}
+.form .budget .title .big-title{
+  margin-top: 6px;
+}
+.form .budget .title .small-title{
+
+}
+.form .budget .clearfix{
+
+}
+.form .budget .clearfix .radio-inline{
+  width: 20%;
+  float: left;
+  text-align: center;
+  padding-left: 0;
+  margin-left: 0;
+  position: relative;
+}
+.form .budget .clearfix .graph_bar{
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 13px;
+  border: 1px solid #bfbfbf;
+  border-right: 0;
+  bottom: -30px;
+}
+.form .budget .radio2 label input[type=radio]:checked + span.graph_bar {
+  background-color: #070d59;
+}
+.form .budget .clearfix input{
+  
+}
+.form .info{
   
 }

@@ -188,7 +188,7 @@ input[type="radio"], input[type="checkbox"]{
   background-repeat: no-repeat;
   background-position: center;
 }
-.form .info{
+.form{
 
 }
 .form .new_info{
@@ -275,7 +275,7 @@ input[type="radio"], input[type="checkbox"]{
 
 }
 .form .budget .clearfix{
-
+  
 }
 .form .budget .clearfix .radio-inline{
   width: 20%;
@@ -296,12 +296,33 @@ input[type="radio"], input[type="checkbox"]{
   border-right: 0;
   bottom: -30px;
 }
+.form .budget .clearfix .graph_bar:last-child{
+  border-right: 1px solid #bfbfbf;
+}
+
 .form .budget .radio2 label input[type=radio]:checked + span.graph_bar {
   background-color: #070d59;
 }
 .form .budget .clearfix input{
   
 }
-.form .info{
+.form .info1{
   
 }
+.form .info1 span{
+  display: none;
+}
+.form .info1 .title{
+  margin: 70px 0 15px;
+}
+.form .info1 .title{
+
+}
+
+.form .info2{
+
+}
+.form .info2 {
+
+}
+

@@ -318,11 +318,104 @@ input[type="radio"], input[type="checkbox"]{
 .form .info1 .title{
 
 }
-
 .form .info2{
 
 }
-.form .info2 {
+.form .info2 .title{
 
 }
+.form .info2 .title .small-title{
+  display: none;
+}
+.form .info2 input{
+
+}
+.form .info2 input .form-group{
+
+}
+.form .info2 input .form-group::before{
+  display: table;
+  content:"";
+}
+.form .info2 input .form-group .col-sm-12{
+  position: relative;
+  min-height: 1px;
+  padding-right: 0 15px;
+
+}
+.text-meted{
+  color: #777;
+}
+.form .info2 input .form-group .col-sm-12 .form-control-static{
+
+}
+.form .info2 input .form-group .col-sm-12 .form-control-static{
+
+}
+.cursor{
+  cursor: pointer;
+}
+.fa-lg{
+  font-size: 1.333333333em;
+  line-height: .75em;
+  vertical-align: -15%;
+}
+.fa{
+  display: inline-block;
+}
+.fa-plus-circle:before{
+  content: "\f055";
+}
+
+#variableFiles{
+  width: 100%;
+  margin: 0;
+  border: 0;
+}
+.tbody{
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+tr{
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+#variableFiles td{
+  padding: 0 0 7px;
+  border: 0;
+}
+.row{
+  margin: 0 -15px;
+}
+.row:before{
+  display: table;
+  content: "";
+}
+.col-sm-7{
+  position: relative;
+  min-height: 1px;
+  padding: 0 15px;
+}
+.input-group-addon {
+  font-weight: 400;
+  color: #555;
+  text-align: center;
+  background-color: #eee;
+  border: 1px solid #ccc;
+}
+.input-group-addon:first-child{
+  border-right: 0;
+}
+#variableFiles input[type=file]{
+  box-shadow: none;
+  border: 1px solid #ccc !important;
+  outline: none;
+}
+.last .hidden{
+  display: none;
+}
+
+
 

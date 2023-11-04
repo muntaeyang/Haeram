@@ -21,9 +21,9 @@ a{
 .btn{
   width: 130px;
   padding: 10px;
-  border: 2px solid #fff;
+  border: 2px solid #070d59;
   border-radius: 4px;
-  color: #fff;
+  color: #070d59;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
@@ -36,16 +36,20 @@ a{
   left: 0;
   margin: 0 auto;
   bottom: 30px;
+  background-color: #fff;
 }
 .btn:hover{
-  background-color: #fff;
-  color: #070d59;
+  background-color: #070d59;
+  color: #fff;
   border: 2px solid #070d59;
 }
 .btn--navy{
   background-color: #070d59;
   color: #fff;
-
+}
+.btn--navy:hover{
+  background-color: #fff;
+  color: #070d59;
 }
 span{
   display: block;
@@ -65,16 +69,19 @@ header .sub-menu{
   position: absolute;
   right: 0;
   display: flex;
+  background-color: #333;
+  width: 200px;
 }
 header .sub-menu .sns{
-  background-color: #333;
-  margin-right: 15px;
-  width: 40px;
-  height: 40px;
-  object-fit: fill;
+  margin: 0 auto;
+}
+header .sub-menu .sns img{
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
 }
 header .badge{
-  position: absolute;
+  position: fixed;
   top: 400px;
   right: 10px;
   cursor: pointer;
@@ -100,9 +107,7 @@ header .main-menu{
   position: absolute;
   height: 30px;
   right: 50px;
-  bottom: 0;
-  top: 0;
-  margin: auto;
+  bottom: 20px;
 }
 header .main-menu .active {
   color: #333;
@@ -159,8 +164,6 @@ header .main-menu button p:hover{
   border: 1px solid #070d59;
 }
 .estimate .btn{
-  border: 2px solid #070d59;
-  color: #070d59;
   bottom: 300px;
 }
 

@@ -5,7 +5,7 @@ function fnMove(seq){
 }
 
 // btn 클릭하면 class추가
-$(document).on("click", "button", function(e) {
+$(document).on("click", "input", function(e) {
 e.preventDefault(); // 기본으로 정의된 이벤트를 작동하지 못하게 하는 메서드
 // .siblings() 객체와 동일한 위치에 있는 모든 객체 (자신을 제외한 형제요소)를 검색하는 메소드
 $(this).addClass("active").siblings().removeClass("active");
@@ -13,3 +13,18 @@ $(this).addClass("active").siblings().removeClass("active");
 fnMove($(this).data("n"));
 
 });
+
+// 서비스 섹션 슬라이드
+new Swiper('.service .swiper-container', {
+  slidesPerview: 1,
+  centerdSlides: true,
+  loop: true,
+  autoplay:{
+    delay: 2000
+  },
+  navigation: {
+    prevEl: '.service .swiper-prev',
+    nextEl: '.service .swiper-next'
+  }
+});
+

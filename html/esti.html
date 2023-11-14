@@ -4,12 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
-  <link rel="icon" href="./favicon.png" />
-  <link rel="stylesheet" href="./css/main.css">
-  <style type="text/css">@import url("../css/esti.css");</style>
-  <script defer src="./js/main.js"></script>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
+
+  <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
+  <link rel="icon" href="../favicon.png" />
+
+  <link rel="stylesheet" href="../css/esti.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <script defer src="../js/main.js"></script>
   
   <!-- 스크롤 이벤트 -->
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
@@ -18,9 +23,11 @@
 
 </head>
 <body>
-  견적문의
-
+  <!-- header -->
   <header>
+    <div class="badge">
+      <a href="javascript:void(0)"> <img src="../images/badge.png" alt=""></a>
+    </div>
     <div class="inner">
         <div class="logo">
           <a href="/">
@@ -28,24 +35,37 @@
           </a>
         </div>
 
-
-        <div class="main-menu">  
-          <button onclick="fnMove('1')" class="active">
-            <p>회사소개</p>
-          </button>
-          <button onclick="fnMove('2')">
-            <p>견적문의</p>
-          </button>
-          <button onclick="fnMove('3')">
-            <p>포트폴리오</p>
-          </button>
-          <button onclick="fnMove('4')">
-            <p>서비스</p>
-          </button>
-          <button onclick="fnMove('5')">
-            <p>리뷰</p>
-          </button>
-       </div>
+        <div class="main-menu">
+          <ul class="menus">
+            <li><a href="../html/intro.html">회사소개</a></li>
+            <li><a href="../html/esti.html">견적요청</a></li>
+            <li><a href="../html/port.html">포트폴리오</a></li>
+            <li><a href="../html/serv.html">서비스</a></li>
+            <li><a href="../html/revi.html">리뷰</a></li>
+          </ul>
+        </div>
+        <div class="sub-menu">
+          <div class="sns blog">
+            <a href="javascript:void(0)">
+              <img src="../images/blog.png" alt="blog">
+            </a>
+          </div>  
+          <div class="sns insta">
+            <a href="javascript:void(0)">
+              <img src="../images/instagram.png" alt="instagram">
+            </a>
+          </div>
+          <div class="sns facebook">
+            <a href="javascript:void(0)">
+              <img src="../images/facebook.png" alt="facebook">
+            </a>
+          </div>
+          <div class="sns youtube">
+            <a href="javascript:void(0)">
+              <img src="../images/youtube.png" alt="youtube">
+            </a>
+          </div>
+        </div>
     </div> 
   </header>
 

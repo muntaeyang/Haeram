@@ -6,6 +6,11 @@
   
   
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  
+  <!-- 스와이퍼 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
   <link rel="icon" href="./favicon.png" />
@@ -19,11 +24,24 @@
 
 </head>
 <body>
+  <div class="badge">
+    <a href="javascript:void(0)"> <img src="./images/badge.png" alt=""></a>
+  </div>
   <!-- header -->
   <header>
     <div class="badge">
       <a href="javascript:void(0)"> <img src="./images/badge.png" alt=""></a>
     </div>
+
+    
+    <div class="main-menu-button">  
+        <input type="radio" id="introduce" onclick="fnMove('1')" class="active">
+        <input type="radio" id="estimate" onclick="fnMove('2')">
+        <input type="radio" id="portpolio" onclick="fnMove('3')">
+        <input type="radio" id="service" onclick="fnMove('4')">
+        <input type="radio" id="review" onclick="fnMove('5')">
+   </div>
+
     <div class="inner">
         <div class="logo">
           <a href="/">
@@ -31,6 +49,15 @@
           </a>
         </div>
 
+        <div class="main-menu">
+          <ul class="menus">
+            <li><a href="./html/intro.html">회사소개</a></li>
+            <li><a href="./html/esti.html">견적요청</a></li>
+            <li><a href="./html/port.html">포트폴리오</a></li>
+            <li><a href="./html/serv.html">서비스</a></li>
+            <li><a href="./html/revi.html">리뷰</a></li>
+          </ul>
+        </div>
         <div class="sub-menu">
           <div class="sns blog">
             <a href="javascript:void(0)">
@@ -53,24 +80,6 @@
             </a>
           </div>
         </div>
-
-        <div class="main-menu">  
-          <button onclick="fnMove('1')" class="active">
-            <p>회사소개</p>
-          </button>
-          <button onclick="fnMove('2')">
-            <p>견적문의</p>
-          </button>
-          <button onclick="fnMove('3')">
-            <p>포트폴리오</p>
-          </button>
-          <button onclick="fnMove('4')">
-            <p>서비스</p>
-          </button>
-          <button onclick="fnMove('5')">
-            <p>리뷰</p>
-          </button>
-       </div>
     </div> 
   </header>
 
@@ -112,36 +121,59 @@
       <div class="portpolio__items">
         <div class="item">
           <a href="javascript:void(0)">
-            <img src="./images/port1.png" alt="port1">
+              <img src="./images/port1.png" alt="port1">
+            <span class="pagename">1</span>
+            <span class="url">https://</span>
+            <span class="material-symbols-outlined">add_circle</span>
           </a>
         </div>
         <div class="item">
           <a href="javascript:void(0)">
             <img src="./images/port2.png" alt="port2">
+            <span class="pagename">2</span>
+            <span class="url">https://</span>
+            <span class="material-symbols-outlined">add_circle</span>
           </a>
         </div>
         <div class="item">
           <a href="javascript:void(0)">
             <img src="./images/port3.png" alt="port3">
+            <span class="pagename">3</span>
+            <span class="url">https://</span>
+            <span class="material-symbols-outlined">add_circle</span>
+            <span></span>
           </a>
         </div>
         <div class="item">
           <a href="javascript:void(0)">
             <img src="./images/port4.png" alt="port4">
+            <span class="pagename">4</span>
+            <span class="url">https://</span>
+            <span class="material-symbols-outlined">add_circle</span>
           </a>
         </div>
         <div class="item">
           <a href="javascript:void(0)">
             <img src="./images/port5.png" alt="port5">
+            <span class="pagename">5</span>
+            <span class="url">https://</span>
+            <span class="material-symbols-outlined">add_circle</span>
           </a>
         </div>
         <div class="item">
           <a href="javascript:void(0)">
             <img src="./images/port5.png" alt="port6">
+            <span class="pagename">6</span>
+            <span class="url">https://</span>
+            <span class="material-symbols-outlined">add_circle</span>
           </a>
-        </div>        <div class="item">
+        </div>        
+        <div class="item">
           <a href="javascript:void(0)">
             <img src="./images/port5.png" alt="port7">
+            <span class="pagename">7</span>
+            <span class="url">https://</span>
+            <span class="material-symbols-outlined">add_circle</span>
           </a>
         </div>
       </div>
@@ -151,6 +183,30 @@
   <!-- SERVICE -->
   <section class="service" id="page4">
     <div class="inner">
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/port1.png" alt="웹">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/port2.png" alt="앱">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/port3.png" alt="앱">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/port4.png" alt="앱">
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-prev">
+        <span class="material-symbols-outlined">arrow_back</span>
+      </div>
+      <div class="swiper-next">
+        <span class="material-symbols-outlined">arrow_forward</span>
+      </div>
       <a href="./html/serv.html" class="btn">더 보기</a>
     </div>
   </section>
@@ -208,15 +264,31 @@
   <footer>
     <div class="inner">
       <div class="company_info">
-        <div class="flogo">
-          <img src="./images/main_logo.png" alt="">
+        <div class="info info_up">
+          <div class="info_up_a">
+            <span class="material-symbols-outlined">support_agent</span>
+            <span>고객센터</span>
+          </div>
+          <br>
+          <span class="call">042-000-0000</span>
+          <span class="on">주중 09:00 ~ 18:00 주말 불가</span>
         </div>
-        <div class="info">
-          <span>해람</span>
-          <span>대표 문태양</span>
+
+
+        <div class="info info_down">
+          <span>주식회사 해람</span>
+          <div class="cline"></div>
+          <span>대전광역시 서구 탄방동 743</span>
+          <div class="cline"></div>
+          <span>대표 문태양 ⋅ 최진용</span>
+          <div class="cline"></div>
           <span>E-Mail : haeram1005@gmail.com</span>
+          <div class="cline"></div>
           <span>사업자등록번호 000-00-00000</span>
-          <span>Tel : 010-7335-2329 / Fax 000-0000-0000</span>
+        </div>
+
+        <div class="info copyright">
+          <span>Copyright 2023. 해람 Corp. All rights reserved.</span>
         </div>
       </div>
     </div>

@@ -1,0 +1,122 @@
+@import url(../css/main.css);
+/* COMMON */
+body{
+  font-family: "Nanum Gothic", "Noto" sans-serif;
+}
+.inner{
+  position: relative;
+  width:  1100px;
+  margin: 0 auto;
+  height: 100%;
+}
+section{
+  border-bottom: 1px solid #333;
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+.img{
+  display: block;
+}
+span{
+  display: block;
+}
+
+/* INTRO_FIRST */
+.intro_first{
+  background-color: #a9a9a9;
+  background-image: url("../images/intro_image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: 110px;
+  width: 100%;
+  height: 500px;
+}
+.intro_first .cover_pattern{
+  width: 100%;
+  height: 100%;
+  background-color: #e5e5f7;
+  opacity: 0.3;
+  background-size: 10px 10px;
+  background-image: repeating-linear-gradient(45deg, #444cf7 0, #444cf7 1px, #e5e5f7 0, #e5e5f7 50%);
+}
+.intro_first .inner{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.intro_first .inner .greeting{
+  position: absolute;
+  width: 1100px;
+  height: 300px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.intro_first .inner .greeting img{
+  width: 1100px;
+  height: 300px;  
+}
+
+
+/* INTRO_SECOND */
+.intro_second{
+  position: relative;
+  height: 800px;
+}
+.intro_second .intro_title{
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+.intro_second .underline{
+  height: 2px;
+  right: 0;
+  background-color: orange;
+  margin-bottom: 18px;
+}
+.intro_second .intro_second_text1{
+  position: absolute;
+  top: 120px;
+}
+.intro_second .intro_second_text1 .underline{
+  width: 120px;
+}
+.intro_second .intro_second_text1 .intro_contents_text{
+    letter-spacing: 1.5px;
+    line-height: 130%;
+    color: #a9a9a9;
+}
+.intro_second .intro_second_text2{
+  position: absolute;
+  top: 360px;
+}
+.intro_second .intro_second_text2 .underline{
+  width: 150px;
+}
+
+
+
+/* INTRO_THIRD */
+.intro_third{
+  position: relative;
+  height: 450px;
+}
+.intro_third .map{
+  position: absolute;
+  width: 600px;
+  height: 450px;
+  right: 0;
+}
+.intro_third .intro_card{
+  width: 450px;
+  height: 450px;
+}
+.intro_third .intro_card img{
+  width: 500px;
+  height: 450px;
+}

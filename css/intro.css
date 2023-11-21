@@ -86,7 +86,8 @@ span{
 .intro_second .intro_second_text1 .underline{
   width: 120px;
 }
-.intro_second .intro_second_text1 .intro_contents_text{
+.intro_second .intro_second_text1 .intro_contents_text,
+.intro_second .intro_second_text2 .intro_contents_text{
     letter-spacing: 1.5px;
     line-height: 130%;
     color: #a9a9a9;
@@ -101,22 +102,15 @@ span{
 
 
 
-/* INTRO_THIRD */
-.intro_third{
+
+/* INTRO_LAST */
+.intro_last{
   position: relative;
   height: 450px;
 }
-.intro_third .map{
+.intro_last .map{
   position: absolute;
-  width: 600px;
+  width: 100%;
   height: 450px;
   right: 0;
-}
-.intro_third .intro_card{
-  width: 450px;
-  height: 450px;
-}
-.intro_third .intro_card img{
-  width: 500px;
-  height: 450px;
 }

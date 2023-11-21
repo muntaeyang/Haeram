@@ -268,16 +268,26 @@ header .logo img{
 
 /* SERVICE */
 .service{
-  height: 864px;
+  height: 1200px;
   margin: 0 auto;
   position: relative;
 }
-
+.service:before{
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0; right: 0; left: 0;
+  background-image: url("../images/servbackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .9;
+}
 .service .swiper-container{
   height: 760px;
   width: 1100px;
   position: absolute;
   overflow: hidden;
+  margin-top: 250px;
+  box-shadow: 0 40px 28px -28px #333
 }
 .service .swiper-container .swiper-wrapper{
 
@@ -299,7 +309,7 @@ header .logo img{
   z-index: 1;
   cursor: pointer;
   outline: none;
-  top: 42%;
+  top: 52%;
   display: flex;
   justify-content: center;
   align-items: center;

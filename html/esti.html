@@ -13,11 +13,9 @@
   <link rel="icon" href="../favicon.png" />
 
   <link rel="stylesheet" href="../css/esti.css">
-  <link rel="stylesheet" href="../css/main.css">
   <script defer src="../js/main.js"></script>
+  <script defer src="../js/esti.js"></script>
   
-  <!-- 스크롤 이벤트 -->
-  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
   
   <title>HAERAM</title>
 
@@ -28,6 +26,7 @@
     <div class="badge">
       <a href="javascript:void(0)"> <img src="../images/badge.png" alt=""></a>
     </div>
+
     <div class="inner">
         <div class="logo">
           <a href="/">
@@ -69,162 +68,99 @@
     </div> 
   </header>
 
-  <div class="form">
+  <!-- ESTIMATE_FIRST -->
+  <section class="estimate_first">
     <div class="inner">
-      <div class="type">
-        <div class="title">
-          <div class="big-title">PROJECT TYPE</div>
-          <div class="small-title">원하시는 홈페이지의 형태를 선택해주세요. <span class="span_br">(다중선택이 가능합니다.)</span></div>
-        </div>
-
-        <div class="check">
-          <div class="input-group2">
-            <input type="checkbox" id="wr_7_1" name="wr_7[]" value="홈페이지">
-            <label for="wr_7_1" class="label1"></label>
-            
-            <input type="checkbox" id="wr_7_2" name="wr_7[]" value="어플">
-            <label for="wr_7_2" class="label2"></label>
-
-            <input type="checkbox" id="wr_7_4" name="wr_7[]" value="기타">
-            <label for="wr_7_4" class="label3"></label>
-
-            <input type="checkbox" id="wr_7_5" name="wr_7[]" value="유지보수">
-            <label for="wr_7_5" class="label4"></label>
-            
-          </div>
-          <div class="clearfix"></div>
+      <div class="estimate_img">
+        <div class="image_container">
+          <img src="../images/estimatecard.png" alt="estimatecard">
         </div>
       </div>
-      <div class="new_info">
-        <div class="title">
-          <div class="big-title">상담방법</div>
-          <div class="small-title">견적문의에 대한 <br><span>상담을 받고자 하는 방법을 선택해주세요.</span></div>
-        </div>
-        <div class="radio">
-          <div class="input-group2" style="font-size: 11px;">
-            <input type="radio" id="wr_6_1" name="wr_6" value="전화상담+견적서발송">
-            <label for="wr_6_1" class="label7"></label>
-            <input type="radio" id="wr_6_2" name="wr_6" value="방문상담+견적서발송">
-            <label for="wr_6_2" class="label8"></label>
-          </div>
-          <div class="clearfix"></div>
-        </div>
-
+      <div class="estimate_center">
+        <span>아래 견적양식을 작성해주세요</span>
       </div>
-      <div class="info_fix">
-        <div class="title" >
-          <div class="big-title">기본정보</div>
-          <div class="small-title">앞으로의 진행에 쓰이는 정보입니다. <br><span>정확한 정보를 적어주셔야 상담 가능합니다. (필수입력입니다.)</span></div>
-        </div>
-        <div class="input">
-          <input type="text" name="wr_subject" value="" id="wr_subject" required="" class="form-control input-sm" size="50" placeholder="실명/회사명/업체명 을 입력해주세요">
-          <input type="text" name="wr_1" value="" id="wr_1" required="" class="form-control input-sm phone_number" size="50" placeholder="연락처를 적어주세요 (휴대폰번호)">
-          <input type="text" name="wr_2" value="" id="wr_2" required="" class="form-control input-sm" size="50" placeholder="이메일을 적어주세요">
-          <input type="text" name="wr_3" value="" id="wr_3" class="form-control input-sm" size="50" placeholder="현재사이트를 적어주세요">
-          <input type="text" name="wr_4" value="" id="wr_4" class="form-control input-sm" size="50" placeholder="참고 사이트를 적어주세요">
-          <input type="text" name="wr_5" value="" id="wr_5" class="form-control input-sm" size="50" placeholder="생각하시는 페이지수를 적어주세요(5p/ 10p/ 20p 등)">
-        </div>
-      </div>
-      <div class="budget">
-        <div class="title" style="padding-top: 27px;">
-          <div class="big-title">예산</div>
-          <div class="small-title">아래의 내용을 상세히 기입해주시면, <br><span>예산에 맞는 맞춤 컨설팅 및 제안을 드립니다.</span></div>
-        </div>
-        <div class="radio2 clearfix">
-          <label class="radio-inline">
-            <input type="radio" required="" class="wr_focus" name="wr_8" id="wr_8" value="~300만원"> 
-            <span class="graph_bar"></span>
-            <span style="position:relative; top:1px;">~300만원 <span class="m_span">&nbsp;</span></span>
-          </label>
-          <label class="radio-inline">
-            <input type="radio" required="" name="wr_8" id="wr_8" value="300~700만원"> 
-            <span class="graph_bar"></span>
-            <span style="position:relative; top:1px;">300~<span class="m_span">700만원</span></span>
-            
-          </label>
-          <label class="radio-inline">
-            <input type="radio" required="" name="wr_8" id="wr_8" value="700~1000만원"> 
-            <span class="graph_bar"></span>
-            <span style="position:relative; top:1px;">700~<span class="m_span">1000만원</span></span>
-          </label>
-          <label class="radio-inline">
-            <input type="radio" required="" name="wr_8" id="wr_8" value="1000~3000만원"> 
-            <span class="graph_bar"></span>
-            <span style="position:relative; top:1px;">1000~<span class="m_span">3000만원</span></span>
-          </label>
-          <label class="radio-inline">
-            <input type="radio" required="" name="wr_8" id="wr_8" value="3000만원 이상"> 
-            <span class="graph_bar"></span>
-            <span style="position:relative; top:1px;">3000만원 <span class="m_span">이상</span></span>
-          </label>
-        </div>
-      </div>
-      <div class="info1">
-        <div class="title">
-          <div class="big-title">상세내용작성</div>
-        </div>
-        <style>
-          /* 에디터 높이 */
-          #wr_content { height: 200px !important;    padding: 10px; font-size: 12.5px; } 
-        </style>
-
-        <div class="input">
-          <span class="sound_only">웹에디터 시작</span>
-          <textarea id="wr_content" name="wr_content" class="form-control input-sm write-content" maxlength="65536" style="width:90%;height:300px">
-            1. 개발배경 및 목적 : 
-
-            2. 이용자 타겟 : 
-
-            3. 컨셉 : 
-          </textarea>
-          <span class="sound_only">웹 에디터 끝</span>						
-        </div>
-      </div>
-
-      <div class="info2">
-        <div class="title" style="padding-bottom: 5px;">
-          <div class="big-title">관련 자료 및 문서 첨부</div>
-           <div class="small-title hidden-md hidden-lg">회사소개 자료등 관련 자료를 전달해주시면 <span>내용 파악에 도움이 됩니다.</span></div>
-        </div>
-        <div class="input" style="margin-top:10px;">
-          <div class="form-group">
-            <div class="col-sm-12">
-              <p class="form-control-static text-muted" style="padding:0px; padding-top:4px;">
-                <span class="cursor" onclick="add_file();"><i class="fa fa-plus-circle fa-lg"></i> 파일추가</span>
-                &nbsp;
-                <span class="cursor" onclick="del_file();"><i class="fa fa-times-circle fa-lg"></i> 파일삭제</span>
-              </p>
-            </div>
-          </div>
-          <div class="form-group" style="margin-bottom:0;">
-            <div class="col-sm-12">
-              <table id="variableFiles"><tbody><tr><td><div class="row"><div class="col-sm-7"><div class="form-group"><div class="input-group input-group-sm"><span class="input-group-addon">파일 0</span><input type="file" class="form-control input-sm" name="bf_file[]" title="파일 용량 99,948,576 바이트 이하만 업로드 가능"></div></div></div></div></td></tr></tbody></table>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="info last">
-        <div class="title" style="padding-top: 28px;">
-          <div class="big-title">개인정보처리방침</div>
-          <div class="input">
-            <label class="" style="color:#909090;">
-              <input type="checkbox" name="" id="" value="" required="" checked=""> 
-              <span style="position:relative; top:1px;color:rgb(51, 51, 51);">개인정보처리방침 내용에 동의합니다.</span>
-              <a class="detail" href="privacypolicy.html" target="_blank">자세히 보기</a>
+      <div class="estimate_box">
+        <ul class="estimate_left">
+          <li>
+            <input type="text" name="write_name" value>
+            <span class="txt">성명 / 회사명</span>
+          </li>
+          <li>
+            <input type="text" name="write_email" value>
+            <span class="txt">이메일</span>
+          </li>
+          <li>
+            <input type="text" name="write_contact" value>
+            <span class="txt">연락처</span>
+          </li>
+          <li>
+            <input type="text" name="write_site" value>
+            <span class="txt">참조사이트</span>
+          </li>
+          <li>
+            <input type="file" id="file" onchange="fileNameInput()" name="files[]">
+            <input type="text" id="fileName">
+            <label for="file">
+              <span id="fileFind">자료등록</span>
             </label>
-          </div>
-        </div>
-        <div class="input hidden">
-          <div class="box" style="font-size:12px;height: 90px; overflow-y:scroll; overflow-x:hidden; border:1px solid #bfbfbf;">
-  
-          </div>
-        </div>
+          </li>
+        </ul>
+
+        <ul class="estimate_right">
+          <li>
+            <input type="text" name="write_title" value>
+            <span class="txt">제목</span>
+          </li>          
+          <li>
+            <input type="text" class="contents" placeholder="문의하실 내용을 기입해주세요" name="write_contents" value>
+          </li>
+        </ul>        
       </div>
       
-      <div class="write-btn pull-center">
-        <button type="submit" id="btn_submit" accesskey="s" class="btn btn-color btn-sm"><b>견적문의 신청하기</b></button>
+      <div class="estimate_bottom">
+        <div class="privacy">
+          <input type="checkbox">
+          <span>개인정보취급방침에 동의하십니까?</span>
+          <a href="javascript:void(0)" onclick="showPopup();">개인정보취급방침 보기</a>
+        </div>
+        <div class="btn">
+          <span>견적제출</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="inner">
+      <div class="company_info">
+        <div class="info info_up">
+          <div class="info_up_a">
+            <span class="material-symbols-outlined">support_agent</span>
+            <span>고객센터</span>
+          </div>
+          <br>
+          <span class="call">042-000-0000</span>
+          <span class="on">주중 09:00 ~ 18:00 주말 불가</span>
+        </div>
+
+
+        <div class="info info_down">
+          <span>주식회사 해람</span>
+          <div class="cline"></div>
+          <span>대전광역시 서구 탄방동 743</span>
+          <div class="cline"></div>
+          <span>대표 문태양 ⋅ 최진용</span>
+          <div class="cline"></div>
+          <span>E-Mail : haeram1005@gmail.com</span>
+          <div class="cline"></div>
+          <span>사업자등록번호 000-00-00000</span>
+        </div>
+
+        <div class="info copyright">
+          <span>Copyright 2023. 해람 Corp. All rights reserved.</span>
+        </div>
       </div>
     </div>
-  </div>
-</body>
-</html>
+  </footer>

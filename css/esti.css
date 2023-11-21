@@ -1,321 +1,134 @@
 @import url("../css/main.css");
-/* form common */
-.big-title{
-  font-weight: bold;
-  font-size: 27px;
-  letter-spacing: -0.3px;
-  font-family: 'Noto Sans', sans-serif;
-  display: inline-block;
-  float: left;
-  padding-right: 10px;
-}
-.small-title{
-  line-height: 18px;
-  /* margin-top: -9px; */
-  padding-top: 2.5px;
-}
-.form .title{
-  overflow: hidden;
-  padding-top: 30px;
-  display: block;
-}
-input{
-  font-family: inherit;
-  font-size: inherit;
-}
-input[type="radio"], input[type="checkbox"]{
-  margin: 4px 0 0;
-  box-sizing: border-box;
-}
-/* form */
-.form{
+
+/* ESTIMATE_FIRST */
+.estimate_first{
   margin-top: 110px;
-  float: right;
-  width: 100%;
+  height: 1000px;
+
 }
-.form .inner{
-  border-left: 1px solid #070d59;
-  border-right: 1px solid #070d59;
-  padding: 0 20px;
+.estimate_first:before{
+  content: "";
+  margin-top: 110px;
+  background-image: url("../images/estibackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .6;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+}
+.estimate_first .estimate_img .image_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0 30px 0;
+}
+.estimate_first .estimate_img .image_container img{
   width: 900px;
+  height: 370px;
 }
-.form .type{
-
-}
-.form .type .title{
-  overflow: hidden;
-  padding-top: 30px;
+.estimate_first .estimate_box input{
   display: block;
-}
-.form .type .title .big-title{
-  bottom: 30px;
-}
-.form .type .title .small-title{
-
-}
-.form .type .title .small-title .span_br{
-  font-size: 12px;
-}
-
-.form .check{
-  box-sizing: border-box;
-}
-.form .check .input-group2{
-  font-size: 11px;
-  margin: 12px 0 ;
-}
-.form .check .input-group2 input{
-  display: none;
-}
-.form .check label{
-  display: inline-block;
-  width: 150px;
-  line-height: 128px;
-  text-align: center;
-  border: 1px solid #bfbfbf;
-  border-spacing: 0;
-  box-sizing: border-box;
-}
-.form .check .input-group2 input[type="checkbox"] + label{
-  cursor: pointer;
-  height: 128px;
-}
-.form .check .input-group2 input[type="checkbox"] + label.label1,
-.form .check .input-group2 input[type="checkbox"] + label.label2,
-.form .check .input-group2 input[type="checkbox"] + label.label3,
-.form .check .input-group2 input[type="checkbox"] + label.label4{
-  background-image: url("../images/contact2_off.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.form{
-
-}
-.form .new_info{
-
-}
-.form .new_info .title{
-
-}
-.form .new_info .title .big-title{
-  font-weight: bold;
-  font-size: 27px;
-  letter-spacing: -0.3px;
-  font-family: 'Noto Sans', sans-serif;
-  display: inline-block;
-  float: left;
-  padding-right: 10px;
-  margin-top: 6px ;
-}
-.form .new_info .title .small-title{
-
-}
-.form .new_info label{
-  display: inline-block;
-  width: 300px;
-  line-height: 128px;
-  text-align: center;
-  border: 1px solid #bfbfbf;
-  border-spacing: 0;
-  box-sizing: border-box;
-}
-.form .new_info .radio{
-  margin: 20px 0 10px;
-}
-.form .new_info .radio .input-group2{
-
-}
-.form .new_info .radio .input-group2 input{
-  display: none;
-}
-.form .new_info .radio .input-group2 input[type="radio"] + label{
+  margin-top: 15px;
+  width: 500px;
   height: 50px;
+  padding-left: 110px;
+  box-sizing: border-box;
 }
-.form .new_info .radio .input-group2 input[type="radio"] + label.label7{
-  background-image: url("../images/consult_01_off.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
+.estimate_first .estimate_center{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.form .new_info .radio .input-group2 input[type="radio"] + label.label8{
-  background-image: url("../images/consult_02_off.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
+.estimate_first .estimate_center span{
+  font-size: 25px;
+  font-weight: bold;
+  color: #333;
+  text-shadow: 3px 3px #a9a9a9;
 }
-.form .info_fix{
-
-}
-.form .info_fix .title{
+.estimate_first .estimate_box{
+  display: flex;
+  /* height: 600px; */
+  width: 1100px;
   margin-bottom: 20px;
 }
-.form .info_fix .title .big-title{
-  margin-top: 7px;
+.estimate_first .estimate_box li span{
+  position: absolute;
+  top: 18px;
+  left: 15px;
 }
-.form .info_fix .title .small-title{
-
+.estimate_first .estimate_box .estimate_left{
+  width: 50%;
+} 
+.estimate_first .estimate_box .estimate_left li{
+  position: relative;
+  width: 500px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
 }
-.form .info_fix .input{
-  width: 400px;
-  vertical-align: middle;
-}
-.form .info_fix .input input{
-  margin: 5px 0 ;
-  height: 25px;
-  width: 600px;
-}
-.form .budget{
-
-}
-.form .budget .title{
-  margin-bottom: 20px;
-}
-.form .budget .title .big-title{
-  margin-top: 6px;
-}
-.form .budget .title .small-title{
-
-}
-.form .budget .clearfix{
-  
-}
-.form .budget .clearfix .radio-inline{
-  width: 20%;
-  float: left;
-  text-align: center;
-  padding-left: 0;
-  margin-left: 0;
+.estimate_first .estimate_box .estimate_left li:last-child{
+  display: flex;
   position: relative;
 }
-.form .budget .clearfix .graph_bar{
-  width: 100%;
+.estimate_first .estimate_box .estimate_left li #file{
+  display: none;
+}
+.estimate_first .estimate_box .estimate_left li #fileName{
+  padding-left: 15px;
+  width: 385px;
+}
+.estimate_first .estimate_box .estimate_left li label{
+  display: block;
+  height: 100%;
+}
+.estimate_first .estimate_box .estimate_left li #fileFind{
   display: block;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 13px;
-  border: 1px solid #bfbfbf;
-  border-right: 0;
-  bottom: -30px;
-}
-.form .budget .clearfix .graph_bar:last-child{
-  border-right: 1px solid #bfbfbf;
-}
-
-.form .budget .radio2 label input[type=radio]:checked + span.graph_bar {
-  background-color: #070d59;
-}
-.form .budget .clearfix input{
-  
-}
-.form .info1{
-  
-}
-.form .info1 span{
-  display: none;
-}
-.form .info1 .title{
-  margin: 70px 0 15px;
-}
-.form .info1 .title{
-
-}
-.form .info2{
-
-}
-.form .info2 .title{
-
-}
-.form .info2 .title .small-title{
-  display: none;
-}
-.form .info2 input{
-
-}
-.form .info2 input .form-group{
-
-}
-.form .info2 input .form-group::before{
-  display: table;
-  content:"";
-}
-.form .info2 input .form-group .col-sm-12{
-  position: relative;
-  min-height: 1px;
-  padding-right: 0 15px;
-
-}
-.text-meted{
-  color: #777;
-}
-.form .info2 input .form-group .col-sm-12 .form-control-static{
-
-}
-.form .info2 input .form-group .col-sm-12 .form-control-static{
-
-}
-.cursor{
+  top: 15px;
+  left: 79%;
+  width: 105px;
+  height: 50px;
+  background: #070d59;
+  color: #fff;
+  font: 16px/45px 'noto' ;
+  font-weight: 700;
+  text-align: center;
   cursor: pointer;
 }
-.fa-lg{
-  font-size: 1.333333333em;
-  line-height: .75em;
-  vertical-align: -15%;
+.estimate_first .estimate_box .estimate_right{
+  width: 50%;
 }
-.fa{
-  display: inline-block;
-}
-.fa-plus-circle:before{
-  content: "\f055";
-}
-
-#variableFiles{
-  width: 100%;
-  margin: 0;
-  border: 0;
-}
-.tbody{
-  display: table-row-group;
-  vertical-align: middle;
-  border-color: inherit;
-}
-tr{
-  display: table-row;
-  vertical-align: inherit;
-  border-color: inherit;
-}
-#variableFiles td{
-  padding: 0 0 7px;
-  border: 0;
-}
-.row{
-  margin: 0 -15px;
-}
-.row:before{
-  display: table;
-  content: "";
-}
-.col-sm-7{
+.estimate_first .estimate_box .estimate_right li{
   position: relative;
-  min-height: 1px;
-  padding: 0 15px;
+  width: 500px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
 }
-.input-group-addon {
-  font-weight: 400;
-  color: #555;
-  text-align: center;
-  background-color: #eee;
-  border: 1px solid #ccc;
+.estimate_first .estimate_box .estimate_right li .contents{
+  padding: 0;
+  height: 245px;
 }
-.input-group-addon:first-child{
-  border-right: 0;
+.estimate_first .estimate_bottom{
+  height: 200px;
+  position: relative;
 }
-#variableFiles input[type=file]{
-  box-shadow: none;
-  border: 1px solid #ccc !important;
-  outline: none;
+.estimate_first .estimate_bottom .privacy{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.last .hidden{
-  display: none;
+.estimate_first .estimate_bottom .privacy a{
+  color: red;
+  text-decoration: underline;
+  margin-left: 10px;
 }
-
-
-
+.estimate_first .estimate_bottom .btn{
+  bottom: 120px;
+}

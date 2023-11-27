@@ -1,3 +1,20 @@
+// 이미지 딜레이
+   const textEls = document.querySelectorAll('.introduce .fade-in');
+   textEls.forEach(function (textEl, index) {
+    gsap.to(textEl, 1, {
+      delay: (index+1) * .7,
+      opacity: 1,
+     });
+   });
+
+   const fadeEls = document.querySelectorAll('.intro_second .fade-in');
+   fadeEls.forEach(function (fadeEl, index) {
+    gsap.to(fadeEl, 1, {
+      delay: (index+1) * .7,
+      opacity: 1,
+     });
+   });
+
 // btn 클릭하면 스크롤 이동
 function fnMove(seq){
   var offset = $("#page" + seq).offset();
@@ -27,4 +44,3 @@ new Swiper('.service .swiper-container', {
     nextEl: '.service .swiper-next'
   }
 });
-

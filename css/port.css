@@ -21,64 +21,120 @@ a{
 span{
   display: block;
 }
-
 /* PORT_FIRST */
 .port_first{
-  height: 900px;
+  height: 800px;
   margin-top: 110px;
   position: relative;
 }
-.port_first .backgroundimg{
+.port_first .swiper-container{
+  height: 800px;
   width: 100%;
-  height: 100%;
   position: absolute;
-  top: 0;
-  background-image: url("../images/portback.jpg");
-  opacity: .9;
-  z-index: -1;
+  overflow: hidden;
 }
-.port_first .portpolio_title,
-.port_first .portpolio_title2{
+.port_first .swiper-container .swiper-wrapper{
+  height: inherit;
+}
+.port_first .swiper-container .swiper-wrapper .swiper-slide{
+  height: inherit;
+}
+.port_first .swiper-container .swiper-wrapper .swiper-slide img{
+  height: 100%;
+  width: 100%;
+}
+.port_first .swiper-prev,
+.port_first .swiper-next{
+  width: 42px;
+  height: 42px;
+  border: 1px solid #070d59;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+  outline: none;
+  top: 52%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.port_first .portpolio_title{
-  padding-top: 40px;
+.port_first .swiper-prev{
+  left: 7%;
 }
-.port_first .portpolio_title .portpolio_subtext{
-  font-size: 25px;
-  color: #9ba4b5;
-  margin: 0 13px;
+.port_first .swiper-next{
+  right: 7%;
 }
-.port_first .portpolio_title .portpolio_maintext{
-  font-size: 40px;
+.port_first .swiper-prev:hover,
+.port_first .swiper-next:hover{
+  background-color: #070d59;
   color: #fff;
 }
-.port_first .portpolio_title2{
+/* port_second */
+.port_second{
+  height: 900px;
+  position: relative;
+}
+.port_second .cover__pattern{
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  opacity: 0.2;
+  background-size: 10px 10px;
+  background-image: repeating-linear-gradient(45deg, #444cf7 0, #444cf7 .5px, #e5e5f7 0, #e5e5f7 50%);
+  position: absolute;
+}
+.port_second .portpolio_title,
+.port_second .portpolio_title2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.port_second .portpolio_title{
+  padding-top: 40px;
+}
+.port_second .portpolio_title .portpolio_subtext{
+  font-size: 25px;
+  color: #7d7c7c;
+  margin: 0 13px;
+}
+.port_second .portpolio_title .portpolio_maintext{
+  font-size: 40px;
+  color: #333;
+}
+.port_second .portpolio_title2{
   padding-top: 20px;
 }
-.port_first .portpolio_title2 .portpolio_subtext{
-  color: #9ba4b5;
+.port_second .portpolio_title2 .portpolio_subtext{
+  color: #7d7c7c;
 }
-.port_first .category{
+.port_second .category{
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 40px 0 20px 0; 
-  border-top: 1px solid #fff;
+  border-top: 1px solid #333;
   padding: 30px 0;
 }
-.port_first .category .categoryname{
+.port_second .category .categoryname{
   margin: 0 34px;
-  border: 2px solid #fff;
+  border: 2px solid #333;
   padding: 15px;
+  width: 118px;
+  display: flex;
+  justify-content: center;
 }
-.port_first .category .categoryname a{
+.port_second .category .categoryname:hover{
+  background-color: #333;
+  transition: .5s;
+}
+.port_second .category .categoryname:hover a{
   color: #fff;
+}
+.port_second .category .categoryname a{
+  color: #333;
   font-size: 22px;
 }
-.port_first .portpolio__items .portpolio__items1{
+.port_second .portpolio__items .portpolio__items1{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,26 +142,27 @@ span{
   margin-top: 30px;
   width: 100%;
 }
-.port_first .portpolio__items .portpolio__items2{
+.port_second .portpolio__items .portpolio__items2{ 
 display: none;
 }
-.port_first .portpolio__items .item{
+.port_second .portpolio__items .item{
   margin: 10px 10px;
   position: relative;
   width: auto;
 }
-.port_first .portpolio__items .item span{
+.port_second .portpolio__items .item span{
   text-align: center;
   margin-top: 10px;
 }
-.port_first .portpolio__items .item .pagename{
+.port_second .portpolio__items .item .pagename{
   font-size: 24px;
+  color: #333;
 }
-.port_first .portpolio__items .item .url{
+.port_second .portpolio__items .item .url{
   font-size: 12px;
-  color: #9ba4b5;
+  color: #a9a9a9;
 }
-.port_first .portpolio__items .item .material-symbols-outlined{
+.port_second .portpolio__items .item .material-symbols-outlined{
   position: absolute;
   margin-top: 0;
   right: 0;
@@ -117,6 +174,6 @@ display: none;
   font-size: 30px;
   transition: .4s;
 }
-.port_first .portpolio__items .item:hover .material-symbols-outlined{
+.port_second .portpolio__items .item:hover .material-symbols-outlined{
   opacity: 1;
 }

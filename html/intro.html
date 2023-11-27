@@ -8,13 +8,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
+  <!-- lodash -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
   <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
   <link rel="icon" href="../favicon.png" />
 
   <link rel="stylesheet" href="../css/intro.css">
   <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="../css/intro.css">
+
+  <script defer src="../js/intro.js" ></script>
   <script defer src="../js/main.js"></script>
   
   <!-- 스크롤 이벤트 -->
@@ -82,36 +88,127 @@
     </div>
   </section>
 
-    <!-- INTRO_SECOND -->
+  <!-- INTRO_SECOND -->
   <section class="intro_second">
-
     <div class="inner">
-      <div class="intro_second_text1">
-        <span class="intro_title">회사소개</span>
-        <div class="underline"></div> 
-        <span class="intro_contents_text">해람은 “해내는 사람”이라는 뜻으로
-          여러분과의 소중한 프로젝트에 열과 성을 다하여 해내겠습니다.<br>
-          또한 해람은 “출항 하다” 라는 의미가 있습니다.
-          해람의 꿈과 고객의 꿈이 모여 넓은 꿈의 바다로 출항하는 해람이 되겠습니다.<br>
-          오늘부터 해람과 함께 해주십시오. 여러분의 프로젝트에 꿈을 담겠습니다.
-        </span>     
-      </div>  
-
-      <div class="intro_second_text2">
-        <span class="intro_title">주사업분야</span>
-        <div class="underline"></div>  
-        <span class="intro_contents_text">
-          1. 반응형 웹<br>
-          2. 모바일 앱<br>
-          3. 비트코인 거래소<br>
-          4. 회원관리 프로그램<br>
-          5. 직원관리 프로그램<br>
-        </span>  
+      <div class="intro_img1">
+        <img src="../images/intro_img1.png" alt="해람은?">
+      </div>
+      <div class="companyintroup">
+        <div class="companyintro_left">
+          <div class="intrologo">
+            <img src="../images/main_logo.png" alt="mainlogo">
+          </div>
+          <div class="introimg">
+            <img src="../images/introimg.png" alt="해람을소개합니다">
+          </div>
+        </div>
+        <div class="companyintro_right fade-in" >
+          <span class="intro_contents_text">해람은 “해내는 사람”이라는 뜻으로
+            여러분과의 <br>소중한 프로젝트에 열과 성을 다하여 <br>해내겠습니다.
+            <br>또한 해람은 “출항 하다” 라는 의미가 있습니다.
+            <br>해람의 꿈과 고객의 꿈이 모여 넓은 꿈의 바다로 <br>출항하는 해람이 되겠습니다.
+            <br>오늘부터 해람과 함께 해주십시오.<br>여러분의 프로젝트에 꿈을 담겠습니다.
+          </span>
+        </div>
+      </div>
+      <div class="companyintrodown">
+        <div class="companyintro_left_down">
+          <div class="introimg">
+            <img src="../images/intro_kind.png" alt="사업분야">
+          </div>
+        </div>
+        <div class="companyintro_right_down fade-in">
+          <span class="intro_contents_text">
+            1. 반응형 웹<br>
+            2. 모바일 앱<br>
+            3. 비트코인 거래소<br>
+            4. 회원관리 프로그램<br>
+            5. 직원관리 프로그램<br>
+          </span>
+        </div>
       </div>
     </div>
   </section>
 
-    <!-- INTRO_LAST -->
+  <!-- INTRO_THIRD -->
+  <section class="intro_third">
+    <div class="inner">
+      <div class="ideal_talent">
+        <div class="peopletext_container">
+          <img src="../images/people.png" alt="people">
+        </div>
+      </div>
+
+      <div class="peopleimg">
+
+        <div class="peopleimg_container fade-in">
+          <img src="../images/people1.png" alt="people1">          
+          <span class="imgtitle">풍부한 상상력을 <br>가진 인재</span>
+          <span class="imgcontents">
+            해람은 작은 상상력도 큰 가능성의 <br>시선으로 바라봅니다
+            다양한 사람들의 <br>다양한 상상력을 바탕으로 개성있는 <br>결과물을 만들어내기위해 노력합니다
+          </span>
+        </div>
+
+        <div class="peopleimg_container fade-in">
+          <img src="../images/people2.png" alt="people2">          
+          <span class="imgtitle">공동체 인식을 가진 인재</span>
+          <span class="imgcontents">
+            해람에서 혼자하는 일은 없습니다. <br>서로의 의견을 나누고 
+            협업하여 효율적인 방법을 창출합니다
+          </span>
+        </div>
+
+        <div class="peopleimg_container fade-in">
+          <img src="../images/people3.png" alt="people3">          
+          <span class="imgtitle">풍부한 상상력을 가진 인재</span>
+          <span class="imgcontents">
+            해람은 작은 상상력도 큰 가능성의 시선으로 바라봅니다<br>
+            다양한 사람들의 다양한 상상력을 바탕으로 개성있는 결과물을 만들어내기위해 노력합니다
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTRO_fOURTH -->
+  <section class="intro_fourth">
+    <div class="inner">
+      <div class="fourth_main_title">
+        <img src="../images/intro_fourth.png" alt="복지">
+      </div>
+
+      <div class="management">
+        <div class="management_of schedule" >
+          <img src="../images/calendar.png" class="sticker" alt="달력">
+          <div class="management_t">
+            <span class="management_title">일하고싶을때 일하기</span>
+            <span class="management_text"><span class="management_text bold">마감기한내</span>에서 자유로운 근무시간 편성</span>
+          </div>  
+        </div>
+        <div class="management_of work">
+          <img src="../images/home.png" class="sticker" alt="달력">
+          <div class="management_t">
+            <span class="management_title">주 2회 재택근무</span>
+            <span class="management_text">자유로운 근무환경 제공<span class="management_text bold">비상연락은 상시대기!</span></span>
+          </div> 
+        </div>
+        <div class="management_of shopping">
+          <img src="../images/shopping.png" class="sticker" alt="달력">
+          <div class="management_t">
+            <span class="management_title">작업에 필요한 비품 지원</span>
+            <span class="management_text"><span class="management_text bold">필요성 심사 후</span>즉각지원</span>
+          </div>  
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTRO_LAST -->
   <section class="intro_last">
       <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3213.542886503319!2d127.38628207642009!3d36.34762699307948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3565495de8506a0b%3A0x7ee7ab8e3be96f1a!2z64yA7KCE6rSR7Jet7IucIOyEnOq1rCDtg4TrsKnrj5kgNzQz!5e0!3m2!1sko!2skr!4v1700553137190!5m2!1sko!2skr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

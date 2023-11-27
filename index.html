@@ -5,22 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   
   <!-- 스와이퍼 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <!-- css reset -->
+  <!-- css 리셋 -->
   <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
   
+  <!-- jquery -->
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+
+  <!-- 스크롤 매직 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- 스크롤 이벤트 -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
   <link rel="icon" href="./favicon.png" />
   <link rel="stylesheet" href="./css/main.css">
   <script defer src="./js/main.js"></script>
-  
-  <!-- 스크롤 이벤트 -->
-  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
   
   <title>HAERAM</title>
 
@@ -87,10 +95,11 @@
 
   <!-- INTRODUCE -->
   <section class="introduce" id="page1">
+    <div class="cover__pattern"></div>
     <div class="inner">
       <a href="./html/intro.html" class="btn">More Introduce</a>
 
-      <div class="text">
+      <div class="text fade-in">
         <img src="./images/intro.png" alt="해내는사람 해람입니다">
       </div>
     </div>

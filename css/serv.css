@@ -9,9 +9,19 @@ span{
   margin-top: 110px;
   height: 900px;
   position: relative;
+
+}
+.service_first:before{
+  content: "";
   background-image: url("../images/servicefirst.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0.9;
 }
 .service_first .servicetext{
   position: absolute;
@@ -41,75 +51,92 @@ span{
 
 /* SERVICE_SECOND */
 .service_second{
-  height: 2200px;
+  height: 1800px;
+  background-color: #fffbf5;
 }
-.service_second .modifiability{
+.service_second .serv_kind{
+  position: absolute;
   height: 400px;
   width: 1100px;
-  right: 0;
-  left: 0;
-  margin: 200px auto 300px auto;
 }
-.service_second .modifiability .modifiability_contents{
+.service_second .modifiability{
+  height: 182px;
+  top: 120px;
+}
+.service_main{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.service_second .serv_kind .modifiability_contents{
   width: 182px;
   height: 182px;
-  right: 0;
-  left: 0;
-  margin: 100px auto 0 auto;
-
 }
-.service_second .modifiability .modifiability_contents > .material-symbols-outlined{
+.service_second .serv_kind .modifiability_contents > .material-symbols-outlined{
   font-size: 150px;
   color: #fff;
   padding: 16px;
   background-color: #070d59;
   border-radius: 50%;
 }
-.service_second .modifiability > span{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.service_second .serv_kind .service_text{
+  margin-left: 30px;
 }
-.service_second .modifiability .modifiability_title{
+.service_second .serv_kind .modifiability_title{
+  right: 0;
   font-size: 60px;
   font-weight: bold;
-  margin: 16px 0;
-}
-.service_second .modifiability .modifiability_text{
-  font-size: 24px;
-  color: #a9a9a9;
-  margin-bottom: 60px;
-}
-.service_second .modifiability .modifiability_ex{
-  margin-top: 30px;
-  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
-.service_second .modifiability .modifiability_ex .ex{
-  height: 400px;
+.service_second .serv_kind .modifiability_text{
+  font-size: 24px;
+  color: #a9a9a9;
+  margin-top: 15px;
+  top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.service_second .serv_kind .modifiability_ex{
+  display: flex
+}
+.service_second .serv_kind .modifiability_ex .ex{
+  height: 150px;
   width: 100%;
   margin: 0 2%;
 }
-.service_second .modifiability .modifiability_ex .material-symbols-outlined{
+.service_second .serv_kind .modifiability_ex .material-symbols-outlined{
   font-size: 44px;
 }
-.service_second .modifiability .modifiability_ex .ex .title{
+
+.service_second .serv_kind .modifiability_ex .ex .title{
   display: flex;
   align-items: center;
   font-size: 32px;
   margin-bottom: 20px;
 }
-.service_second .modifiability .modifiability_ex .ex .ex_text{
+.service_second .serv_kind .modifiability_ex .ex .ex_text{
   color: #a9a9a9;
   letter-spacing: 1.5px;
   line-height: 1.5;
 }
-.service_second .modifiability .modifiability_ex .correction .title span:nth-child(2){
+.service_second .serv_kind .modifiability_ex .correction .title span:nth-child(2){
   font-size: 29px;
 }
-
+.service_second .security{
+  top: 760px;
+}
+.service_second .security img{
+  display: flex;
+  margin: 0 auto;
+}
+.service_second .reliability img{
+  display: flex;
+  margin: 0 auto;
+} 
+.service_second .reliability{
+  top: 1340px;
+}
 /* FOOTER */
 footer .inner{
   width: 1100px;

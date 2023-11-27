@@ -9,6 +9,8 @@
 .estimate_first:before{
   content: "";
   margin-top: 110px;
+  width: 100%;
+  height: 1000px;
   background-image: url("../images/estibackground.jpg");
   background-repeat: no-repeat;
   background-size: cover;

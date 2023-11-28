@@ -240,6 +240,9 @@ header .logo img{
   height: 862px;
   margin: 0 auto;
 }
+.portpolio .inner{
+  width: 1500px;
+}
 .portpolio .title{
   display: flex;
   justify-content: center;
@@ -258,6 +261,12 @@ header .logo img{
 .portpolio .portpolio__items .item{
   margin: 10px 10px;
   position: relative;
+  width: 280px;
+  height: 300px;
+}
+.portpolio .portpolio__items .item img{
+  width: 280px;
+  height: 160px;
 }
 .portpolio .portpolio__items .item span{
   text-align: center;

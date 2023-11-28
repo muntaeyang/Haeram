@@ -71,8 +71,11 @@ span{
 }
 /* port_second */
 .port_second{
-  height: 900px;
+  /* height: 900px; */
   position: relative;
+}
+.port_second .inner{
+  width: 1500px;
 }
 .port_second .cover__pattern{
   width: 100%;
@@ -134,21 +137,54 @@ span{
   color: #333;
   font-size: 22px;
 }
-.port_second .portpolio__items .portpolio__items1{
+.port_second .portpolio__items{
+  width: 1400px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+.port_second .portpolio__items .homepage{
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex-wrap: wrap;
   margin-top: 30px;
   width: 100%;
 }
-.port_second .portpolio__items .portpolio__items2{ 
-display: none;
+.port_second .portpolio__items .mobileapp{ 
+  display: none;
+  /* justify-content: center; */
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  width: 100%;
+}
+.port_second .portpolio__items .webprogram { 
+  display: none;
+  /* justify-content: center; */
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  width: 100%;
+}
+.port_second .portpolio__items .others{ 
+  display: none;
+  /* justify-content: center; */
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  width: 100%;
 }
 .port_second .portpolio__items .item{
   margin: 10px 10px;
   position: relative;
-  width: auto;
+  width: 260px;
+  height: 280px;
+  float: left;
+}
+.port_second .portpolio__items .item img{
+  width: 260px;
+  height: 160px;
 }
 .port_second .portpolio__items .item span{
   text-align: center;

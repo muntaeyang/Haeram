@@ -132,7 +132,7 @@ header .main-menu .menus li a:hover{
 header .sub-menu{
   position: absolute;
   top: 10px;
-  right: 58px;
+  right: 128px;
   display: flex;
   width: 200px;
 }
@@ -169,6 +169,18 @@ header .logo{
 header .logo img{
   width: 200px;
   object-fit: contain;
+}
+header .member-menu{
+  display: flex;
+  position: absolute;
+  right: 11px;
+  top: 16px;
+}
+header .member-menu .signin{
+  margin-right: 11px;
+}
+header .member-menu .join{
+  
 }
 /* INTRODUCE */
 .introduce{

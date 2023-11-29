@@ -1,38 +1,31 @@
 @import url("../css/main.css");
 
+
 /* ESTIMATE_FIRST */
 .estimate_first{
+  height: 1000px;
+}
+.estimate_first .inner{
+
+}
+
+/* ESTIMATE_SECOND */
+.estimate_second{
   margin-top: 110px;
   height: 1000px;
 
 }
-.estimate_first:before{
-  content: "";
-  margin-top: 110px;
-  width: 100%;
-  height: 1000px;
-  background-image: url("../images/estibackground.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: .6;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-
-}
-.estimate_first .estimate_img .image_container{
+.estimate_second .estimate_img .image_container{
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 80px 0 30px 0;
 }
-.estimate_first .estimate_img .image_container img{
+.estimate_second .estimate_img .image_container img{
   width: 900px;
   height: 370px;
 }
-.estimate_first .estimate_box input{
+.estimate_second .estimate_box input{
   display: block;
   margin-top: 15px;
   width: 500px;
@@ -40,56 +33,56 @@
   padding-left: 110px;
   box-sizing: border-box;
 }
-.estimate_first .estimate_center{
+.estimate_second .estimate_center{
   width: 100%;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.estimate_first .estimate_center span{
+.estimate_second .estimate_center span{
   font-size: 25px;
   font-weight: bold;
   color: #333;
   text-shadow: 3px 3px #a9a9a9;
 }
-.estimate_first .estimate_box{
+.estimate_second .estimate_box{
   display: flex;
   /* height: 600px; */
   width: 1100px;
   margin-bottom: 20px;
 }
-.estimate_first .estimate_box li span{
+.estimate_second .estimate_box li span{
   position: absolute;
   top: 18px;
   left: 15px;
 }
-.estimate_first .estimate_box .estimate_left{
+.estimate_second .estimate_box .estimate_left{
   width: 50%;
 } 
-.estimate_first .estimate_box .estimate_left li{
+.estimate_second .estimate_box .estimate_left li{
   position: relative;
   width: 500px;
   right: 0;
   left: 0;
   margin: 0 auto;
 }
-.estimate_first .estimate_box .estimate_left li:last-child{
+.estimate_second .estimate_box .estimate_left li:last-child{
   display: flex;
   position: relative;
 }
-.estimate_first .estimate_box .estimate_left li #file{
+.estimate_second .estimate_box .estimate_left li #file{
   display: none;
 }
-.estimate_first .estimate_box .estimate_left li #fileName{
+.estimate_second .estimate_box .estimate_left li #fileName{
   padding-left: 15px;
   width: 385px;
 }
-.estimate_first .estimate_box .estimate_left li label{
+.estimate_second .estimate_box .estimate_left li label{
   display: block;
   height: 100%;
 }
-.estimate_first .estimate_box .estimate_left li #fileFind{
+.estimate_second .estimate_box .estimate_left li #fileFind{
   display: block;
   position: absolute;
   top: 15px;
@@ -103,34 +96,34 @@
   text-align: center;
   cursor: pointer;
 }
-.estimate_first .estimate_box .estimate_right{
+.estimate_second .estimate_box .estimate_right{
   width: 50%;
 }
-.estimate_first .estimate_box .estimate_right li{
+.estimate_second .estimate_box .estimate_right li{
   position: relative;
   width: 500px;
   right: 0;
   left: 0;
   margin: 0 auto;
 }
-.estimate_first .estimate_box .estimate_right li .contents{
+.estimate_second .estimate_box .estimate_right li .contents{
   padding: 0;
   height: 245px;
 }
-.estimate_first .estimate_bottom{
+.estimate_second .estimate_bottom{
   height: 200px;
   position: relative;
 }
-.estimate_first .estimate_bottom .privacy{
+.estimate_second .estimate_bottom .privacy{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.estimate_first .estimate_bottom .privacy a{
+.estimate_second .estimate_bottom .privacy a{
   color: red;
   text-decoration: underline;
   margin-left: 10px;
 }
-.estimate_first .estimate_bottom .btn{
+.estimate_second .estimate_bottom .btn{
   bottom: 120px;
 }

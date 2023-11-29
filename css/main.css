@@ -353,7 +353,17 @@ header .logo img{
 .review{
   height: 864px;
   margin: 0 auto;
+  position: relative;
 }
+/* .review:before{
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0; right: 0; left: 0;
+  background-image: url("../images/servbackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .9;
+} */
 .review .title{
   padding: 40px 0 0;
 }

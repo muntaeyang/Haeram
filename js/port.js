@@ -12,7 +12,12 @@
   }
 });
 
+// const categoryname = document.querySelectorAll(".category .categoryname");
+// categoryname.forEach(element => {
 
+// });
+
+// 포트폴리오 화면 전환
 const category1 = document.querySelector(".category .category1");
 const category2 = document.querySelector(".category .category2");
 const category3 = document.querySelector(".category .category3");
@@ -22,9 +27,6 @@ const homepage = document.querySelector(".portpolio__items .homepage");
 const mobileapp = document.querySelector(".portpolio__items .mobileapp");
 const webprogram = document.querySelector(".portpolio__items .webprogram");
 const others = document.querySelector(".portpolio__items .others");
-
-const dropdownContent = document.querySelector(".portpolio__items");
-const drop_icon1 = document.querySelector(".portpolio__items .item");
   
 category1.addEventListener("click", function() {
   if (homepage.style.display = "flex") {

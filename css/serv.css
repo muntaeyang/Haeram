@@ -27,7 +27,7 @@ span{
   position: absolute;
   width: 787px;
   height: 218px;
-  top: 50px;
+  top: 150px;
   right: 0;
   left: 0;
   margin: 0 auto;
@@ -136,6 +136,115 @@ span{
 } 
 .service_second .reliability{
   top: 1340px;
+}
+
+/* SERVICE_THIRD */
+.service_third{
+
+}
+.service_third .haeramservice{
+  width: 100%;
+  height: 200px;
+  background-color: black;
+  position: relative;
+}
+.service_third .haeramservice span{
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  left: 280px;
+}
+.service_third .haeramservice .s1{
+  font-size: 48px;
+  top: 42px;
+}
+.service_third .haeramservice .s2{
+  font-size: 22px;
+  bottom: 60px;
+}
+.service_third .inner{
+  width: 1400px;
+} 
+.service_third .service_third_top,
+.service_third .service_third_middle,
+.service_third .service_third_bottom{
+  position: relative;
+  width: 1200px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+}
+.service_third .service_third_top_left,
+.service_third .service_third_middle_left,
+.service_third .service_third_bottom_left{
+  position: absolute;
+  left: 180px;
+  width: 420px;
+  height: 380px;
+  box-sizing: border-box;
+}
+.service_third .service_third_top_right,
+.service_third .service_third_middle_right,
+.service_third .service_third_bottom_right{
+  position: absolute;
+  right: 180px;
+  width: 420px;
+  height: 380px;
+  box-sizing: border-box;
+}
+.service_third .service_third_top_left,
+.service_third .service_third_middle_right,
+.service_third .service_third_bottom_left{
+  border: 1px solid black;
+  border-radius: 6%;
+}
+.service_third .service_third_top_left img{
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  right: 0; left: 0; top: 0; bottom: 0;
+  margin: auto;
+}
+.service_third .service_third_top_right .sttl1{
+  position: absolute;
+  top: 120px;
+  left: 40px;
+  font-size: 42px;
+  font-weight: bold;
+  padding-left: 40px;
+}
+.service_third .service_third_top_right .sttl2{
+  position: absolute;
+  top: 180px;
+  left: 40px;
+  font-size: 22px;
+  padding-left: 40px;
+  line-height: 1.2;
+  color: #7d7c7c;
+}
+.service_third .service_third_middle_right img{
+  position: absolute;
+  right: 0; left: 0; top: 0; bottom: 0;
+  margin: auto;
+  width: 250px;
+  height: 250px;
+
+}
+.service_third .service_third_middle_left .stml1{
+  position: absolute;
+  top: 80px;
+  left: 30px;
+  font-size: 42px;
+  font-weight: bold;
+}
+.service_third .service_third_middle_left .stml2{
+  position: absolute;
+  top: 162px;
+  left: 30px;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #7d7c7c;
 }
 /* FOOTER */
 footer .inner{

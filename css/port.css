@@ -125,6 +125,7 @@ span{
   width: 118px;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 .port_second .category .categoryname:hover{
   background-color: #333;
